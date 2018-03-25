@@ -9,16 +9,9 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <style>
-        h3 {
-            height: 40px;
-            background-color: #EF5350
-        }
-
-        div {
-            background: #FFCDD2
-        }
-    </style>
+    <link rel="stylesheet" href="css/acc.css">
+    
+ 
 </head>
 
 <body>
@@ -58,7 +51,7 @@
                 <li>List item three</li>
             </ul>
         </div>
-        <h3 class="s4"> Section 4</h3>
+        <h3 class="s4"><a> Section 4</a></h3>
         <div class="p4">
             Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante
             ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. Suspendisse
@@ -72,36 +65,6 @@
 
 
 </body>
-<script>
-    $(".p1").hide();
-    $(".p2").hide();
-    $(".p3").hide();
-    $(".p4").hide();
-
-    $(".s1").click(function () {
-        $(".p1").toggle();
-        $(".p2").hide();
-        $(".p3").hide();
-        $(".p4").hide();
-    })
-    $(".s2").click(function () {
-        $(".p1").hide();
-        $(".p2").toggle();
-        $(".p3").hide();
-        $(".p4").hide();
-    })
-    $(".s3").click(function () {
-        $(".p1").hide();
-        $(".p2").hide();
-        $(".p3").toggle();
-        $(".p4").hide();
-    })
-    $(".s4").click(function () {
-        $(".p1").hide();
-        $(".p2").hide();
-        $(".p3").hide();
-        $(".p4").toggle();
-    })
-</script>
+<script src="js/acc.js"></script>
 
 </html>

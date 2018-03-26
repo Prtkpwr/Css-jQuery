@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Dialog - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+    <!-- Trigger/Open The Modal -->
+    <h1>My Modal</h1>
+    <div class="box">
+        <a class="button" href="#popup1">Let me Pop up</a>
+    </div>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Here i am</h2>
+            <a class="close x" href="#">&times;</a>
+            <div class="content">
+                Thank to pop me out of that button, but now i'm done so you can close this window.
+
+            </div>
+            <br/>
+            <a class="button x" href="">Close</a>
+        </div>
+    </div>
+</body>
+<script>
+    $(".overlay").hide();
+    $(".button").click(function () {
+        $(".overlay").show();
+    });
+    $(".x").click(function () {
+        $(".overlay").hide();
+    })
+</script>
+
+</html>

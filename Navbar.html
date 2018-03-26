@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Navbar</title>
 
@@ -11,16 +11,27 @@
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
+
 <body>
 
 	<div class="wrap">
 		<nav class="menu">
 			<ul class="active">
-				<li class="current-item"><a href="#">Home</a></li>
-				<li><a href="#">My Work</a></li>
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">Get in Touch</a></li>
-				<li><a href="#">Blog</a></li>
+				<li class="current-item">
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#" class="coll">My Work</a>
+				</li>
+				<li>
+					<a href="#">About Me</a>
+				</li>
+				<li>
+					<a href="#">Get in Touch</a>
+				</li>
+				<li>
+					<a href="#">Blog</a>
+				</li>
 			</ul>
 
 			<a class="toggle-nav" href="#">&#9776;</a>
@@ -30,16 +41,19 @@
 				<button>Search</button>
 			</form>
 		</nav>
-	</div><!--end .wrap-->
+	</div>
+	<!--end .wrap-->
 </body>
 <script>
-    $(document).ready(function() {
-	$('.toggle-nav').click(function(e) {
-		$(this).toggleClass('active');
-		$('.menu ul').toggleClass('active');
+	$(document).ready(function () {
+		$(".col").hide();
+		$('.toggle-nav').click(function (e) {
+			$(this).toggleClass('active');
+			$('.menu ul').toggleClass('active');
 
-		e.preventDefault();
+			e.preventDefault();
+		});
 	});
-});
 </script>
+
 </html>
